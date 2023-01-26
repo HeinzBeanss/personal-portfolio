@@ -1,0 +1,29 @@
+.introduction {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.introductiontitle {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introduction > h1 {
+    margin: 0;
+}
+
+.introductionmessage {
+    opacity: 50%;
+    font-size: 0.8rem;
+}
+
+.introductiondesc {
+    max-width: 650px;
+}

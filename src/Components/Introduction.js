@@ -1,0 +1,22 @@
+import React from "react";
+import "../CSS/Introduction.css"
+
+const Introduction = () => {
+
+    return (
+        <div className="introduction">
+            <div className="introductiontitle">
+                <h1 className="introtitlehello">Hello.</h1>
+                <h1 className="introtitlemynameis">My name is David.</h1>
+                {/* <h1 className="introtitledavid"></h1> */}
+                <p className="introductionmessage">(If you couldn't tell from the URL)</p>
+            </div>
+
+            <div>
+                <p className="introductiondesc">I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom!</p>
+            </div>
+        </div>
+    )
+}
+
+export default Introduction;

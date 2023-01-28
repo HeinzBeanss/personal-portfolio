@@ -6,10 +6,9 @@ const Introduction = () => {
     return (
         <div className="introduction">
             <div className="introductiontitle">
-                <h1 className="introtitlehello">Hello.</h1>
-                <h1 className="introtitlemynameis">My name is David.</h1>
+                <h1 className="introtitlehello">Hello!</h1>
+                <h1 className="introtitlemynameis">I'm David.</h1>
                 {/* <h1 className="introtitledavid"></h1> */}
-                <p className="introductionmessage">(If you couldn't tell from the URL)</p>
             </div>
 
             <div>

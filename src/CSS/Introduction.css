@@ -11,17 +11,42 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
 }
 
-.introduction > h1 {
+.introductiontitle > h1 {
+    text-align: start;
+    font-size: 3rem;
     margin: 0;
+    max-width: fit-content;
 }
 
-.introductionmessage {
-    opacity: 50%;
-    font-size: 0.8rem;
+.introtitlehello {
+    overflow: hidden;
+    border-right: .15em solid var(--secondary-container);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15rem;
+    animation: 
+    typing 1.5s steps(1, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 } 
+    16% { width: 15% }
+    32% { width: 30% }
+    48% { width: 38% }
+    64% { width: 45% }
+    80% { width: 60% }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
 }
 
 .introductiondesc {

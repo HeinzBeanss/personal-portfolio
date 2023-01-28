@@ -18,7 +18,7 @@ body.dark {
   --background: #1a1c1e;
   /* --background: #151718; */
   --on-background: #e2e2e5;
-  --surface: #1a1c1e;
+  --surface: #212629;
   --on-surface: #e2e2e5;
   --surface-variant: #42474e;
   --on-surface-variant: #c2c7cf;
@@ -51,8 +51,8 @@ body.light {
   --on-error-container: #410002;
   --background: #fcfcff;
   --on-background: #1a1c1e;
-  --surfac: #fcfcff;
-  --on-surfac: #1a1c1e;
+  --surface: #fcfcff;
+  --on-surface: #1a1c1e;
   --surface-variant: #dee3eb;
   --on-surface-variant: #42474e;
   --outline: #72777f;

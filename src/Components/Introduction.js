@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
 import "../CSS/Introduction.css"
+import downarrow from "../Assets/arrow-down.svg"
 
 import Typewriter from 'typewriter-effect';
 
 const Introduction = () => {
 
+  useEffect(() => {
+    let IntroDesc = document.querySelector(".introductiondesc");
+    let Arrow = document.querySelector(".arrow");
+
+    window.addEventListener("scroll", () => {
+      if (Arrow.classList.contains("hidden")) {
+        // do nothing
+      } else {
+        let arrowtop = Arrow.getBoundingClientRect().top;
+
+        let arrowmovelimit = window.innerHeight - arrowtop - 800;
+        if (Arrow.getBoundingClientRect().top < arrowmovelimit) {
+          Arrow.classList.add("hidden");
+          Arrow.classList.remove("arrow");
+        }
+      }
+      let top = IntroDesc.getBoundingClientRect().top;
+      if ( top < window.innerHeight - 250) {
+        IntroDesc.classList.add("fadeclass");
+      }
+    })
+  },[])
+
     return (
         <div className="introduction">
+          <img className="arrow" src={downarrow} alt="down-arrow"></img>
             <div className="introductiontitle">
                 <h1 className="introtitlehello">
                     <Typewriter options={{
@@ -16,7 +41,7 @@ const Introduction = () => {
                     }}
                       onInit={(typewriter) => {
 
-                        typewriter.typeString('<div class="abc123">Hello!</div>')
+                        typewriter.typeString('Hello!')
                         .pauseFor(1200)
                         .callFunction(() => {
                             const cursorType = document.querySelector(".Typewriter__cursor");
@@ -39,7 +64,6 @@ const Introduction = () => {
                     typewriter
                       .callFunction(() => {
                           const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
-                          console.log(cursorTypeOne);
                           cursorTypeOne.style = "visibility:hidden";
                       })
                       .pauseFor(2000)
@@ -48,21 +72,21 @@ const Introduction = () => {
                         cursorTypeOne.style = "visibility:visible";
                     })
                     .pauseFor(200)
-                      .typeString('<div class="abc123">I\'m a programming enthusiast!</div>')
+                    .typeString('I\'m an aspiring developer.')
+                    .pauseFor(1200)
+                    .deleteChars(23)
+                    .pauseFor(500)
+                      .typeString(' a programming enthusiast!')
                       .pauseFor(1200)
                       .deleteChars(25)
                       .pauseFor(500)
-                      .typeString("an aspiring developer.")
-                      .pauseFor(1200)
-                      .deleteChars(22)
-                      .pauseFor(500)
-                      .typeString("your next employee?")
+                      .typeString('your next employee?')
                       .pauseFor(1200)
                       .deleteChars(19)
                       .pauseFor(500)
-                      .typeString('<strong><h1 style="color: var(--primary)">David</h1></strong>')
+                      .typeString('<strong><span style="color: var(--primary)">David. </span></strong>')
                       .pauseFor(1500)
-                      .typeString(" :)")
+                      .typeString('<strong><span style="color: var(--primary)">:)</span></strong>')
                       .pauseFor(10000)
                       .start();
                   }}

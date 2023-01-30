@@ -30,6 +30,7 @@ body.dark {
   --surface-tint: #96ccff;
   --outline-variant: #42474e;
   --scrim: #000000;
+  --svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(100%) contrast(103%);
 }
 
 body.light {
@@ -63,6 +64,7 @@ body.light {
   --surface-tint: #00639a;
   --outline-variant: #c2c7cf;
   --scrim: #000000;
+  --svg: invert(0%) sepia(92%) saturate(32%) hue-rotate(22deg) brightness(97%) contrast(100%);
 }
 
 body {

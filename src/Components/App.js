@@ -5,6 +5,7 @@ import Introduction from "../Components/Introduction";
 import Skillset from "../Components/Skillset";
 import PersonalProjects from "../Components/PersonalProjects";
 import Contact from "../Components/Contact";
+import Footer from "../Components/Footer"
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
       <Skillset />
       <PersonalProjects />
       <Contact />
+      <Footer />
     
     </div>
   );

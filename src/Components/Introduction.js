@@ -10,6 +10,13 @@ const Introduction = () => {
     let IntroDesc = document.querySelector(".introductiondesc");
     let Arrow = document.querySelector(".arrow");
 
+    let top = IntroDesc.getBoundingClientRect().top;
+    if ( top < window.innerHeight - 250) {
+      IntroDesc.classList.add("alreadyonpage")
+    } else {
+      IntroDesc.classList.add("notonpage");
+    }
+
     window.addEventListener("scroll", () => {
       if (Arrow.classList.contains("hidden")) {
         // do nothing
@@ -23,7 +30,7 @@ const Introduction = () => {
         }
       }
       let top = IntroDesc.getBoundingClientRect().top;
-      if ( top < window.innerHeight - 250) {
+      if ( top < window.innerHeight - 250 && IntroDesc.classList.contains("notonpage")) {
         IntroDesc.classList.add("fadeclass");
       }
     })

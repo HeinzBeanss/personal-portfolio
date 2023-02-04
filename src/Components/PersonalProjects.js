@@ -40,7 +40,7 @@ const PersonalProjects = () => {
         <div className="projectarea">
             <div className="project instagram">
                 <div className="gifbackground">
-                    <img src={instagramgif} alt="instagram clone" className="gif"></img>
+                    <a href="https://heinzbeanss.github.io/instagram/" target="_blank" rel="noopener noreferrer"><img src={instagramgif} alt="instagram clone" className="gif"></img></a>
                 </div>
                 <div className="projectinfo right">
                     <h3 className="projecttitle">Instagram Clone</h3>
@@ -57,12 +57,12 @@ const PersonalProjects = () => {
 
                 </div>
                 <div className="gifbackground">
-                    <img src={battleshipgif} alt="battleship project" className="gifright"></img>
+                <a href="https://heinzbeanss.github.io/battleship/" target="_blank" rel="noopener noreferrer"><img src={battleshipgif} alt="battleship project" className="gifright"></img></a>
                 </div>
             </div>
             <div className="project shoppingcart">
             <div className="gifbackground">
-                <img src={shoppingcartgif} alt="shopping cart project" className="gif"></img>
+            <a href="https://heinzbeanss.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer"><img src={shoppingcartgif} alt="shopping cart project" className="gif"></img></a>
             </div>
                     <div className="projectinfo right">
                         <h3 className="projecttitle">Shopping Cart Mockup</h3>

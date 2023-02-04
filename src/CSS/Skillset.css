@@ -1,3 +1,279 @@
 .Skillset {
     min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.skillsettitle {
+    font-size: 3.6rem;
+    /* margin-bottom: 400px; */
+}
+
+.skillsetdesc {
+    max-width: 650px;
+    font-size: 1.4rem;
+}
+
+.skillname {
+    font-size: 2.4rem;
+    font-weight: 500;
+    /* margin-bottom: 400px; */
+}
+
+.skillscontainer {
+    width: 900px;
+    /* border: 2px solid red; */
+    position: relative;
+    margin: 400px 0;
+}
+.skillsetlogo {
+    width: 70px;
+    border-radius: 0.2rem;
+}
+
+/* .javascript {
+    position: absolute;
+    transform: translateX(-160px);
+}
+
+.html {
+    position: absolute;
+    transform: translateX(-410px);
+}
+
+.css {
+    position: absolute;
+    transform: translateX(90px);
+}
+
+.reactjs {
+    position: absolute;
+    transform: translateX(-160px) rotate(60deg) translateX(-245px);
+}
+
+.git {
+    position: absolute;
+    transform: translateX(-160px) rotate(300deg) translateX(-245px) rotate(60deg);
+}
+
+.webpack {
+    position: absolute;
+    transform: translateX(90px) rotate(300deg) translateX(-245px) rotate(60deg);
+
+}
+.jest {
+    position: absolute;
+    transform: translateX(90px) rotate(60deg) translateX(-245px) rotate(300deg);
+
+}
+.photoshop {
+    position: absolute;
+    transform: translateX(340px);
+
+}
+.illustrator {
+    position: absolute;
+    transform: translateX(340px) rotate(300deg) translateX(-245px) rotate(60deg);
+
+}
+.aftereffects {
+    position: absolute;
+    transform: translateX(340px) rotate(60deg) translateX(-245px) rotate(300deg);
+} */
+
+.line-middle-one {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(55px) translateY(35px);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-middle-two {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(355px) translateY(35px);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-middle-three{
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(655px) translateY(35px);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-top-one {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(-10px) translateY(-95px) rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-top-two {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(120px) translateY(-95px) rotate(60deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-top-three {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(290px) translateY(-95px) rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-top-four {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(590px) translateY(-95px) rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-top-five {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(720px) translateY(-95px) rotate(60deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-bottom-one {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(-10px) translateY(165px) rotate(60deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-bottom-two {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(120px) translateY(165px) rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-bottom-three {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(290px) translateY(165px) rotate(60deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-bottom-four {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(590px) translateY(165px) rotate(60deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.line-bottom-five {
+    position: absolute;
+    border: 2px var(--surface) solid;
+    border-radius: 1rem;
+    width: 190px;
+    transform: translateX(720px) translateY(165px) rotate(120deg);
+    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+}
+
+.javascript {
+    position: absolute;
+    transform: translateX(-185px);
+}
+
+.html {
+    position: absolute;
+    transform: translateX(-485px);
+}
+
+.css {
+    position: absolute;
+    transform: translateX(115px);
+}
+
+.reactjs {
+    position: absolute;
+    transform: translateX(-185px) rotate(60deg) translateX(-300px) rotate(300deg);
+}
+
+.git {
+    position: absolute;
+    transform: translateX(-185px) rotate(300deg) translateX(-300px) rotate(60deg);
+}
+
+.webpack {
+    position: absolute;
+    transform: translateX(115px) rotate(300deg) translateX(-300px) rotate(60deg);
+
+}
+.jest {
+    position: absolute;
+    transform: translateX(115px) rotate(60deg) translateX(-300px) rotate(300deg);
+
+}
+.photoshop {
+    position: absolute;
+    transform: translateX(415px);
+
+}
+.illustrator {
+    position: absolute;
+    transform: translateX(415px) rotate(300deg) translateX(-300px) rotate(60deg);
+
+}
+.aftereffects {
+    position: absolute;
+    transform: translateX(415px) rotate(60deg) translateX(-300px) rotate(300deg);
+}
+
+/* Currently Working On */
+
+.slideshowarea {
+    display: flex;
+    flex-direction: row;        
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: row;  
+    gap: 40px;
+}
+
+.slideshowimagecontainer {
+    width: 180px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    background-color: var(--surface);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+
+.slideshowimage {
+    width: 150px;
+    height: 150px;
 }

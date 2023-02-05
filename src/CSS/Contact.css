@@ -1,34 +1,54 @@
 .contact {
-    margin: 80px 0;
+    margin: 30px 0;
+    padding: 30px 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
+    /* padding: 30px 0px; */
+    background-color: var(--surface);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
 }
 
 .titlecontact {
-    margin-top: 200px;
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+    margin: 0;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
 
-    margin-bottom: 20px;
-    font-size: 3.6rem;
 }
 
 .desccontact {
-    margin-top: 0;
-    font-size: 1.4rem;
-    margin-bottom: 150px;
-    max-width: 650px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    margin-top: 20px;
+    font-size: var(--p-size);
+    line-height: var(--p-lineweight);
+    margin-bottom: 20px;
+    max-width: 1000px;
 }
 
+/* .contactformline {
+    width: 800px;
+    border: 1px solid var(--background);
+    margin-bottom: 20px;
+
+} */
+
 .contactform {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 25px;
-    background-color: var(--surface);
+    background-color: var(--background);
     border-radius: 0.6rem;
+    width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+
 }
 
 label {
@@ -38,11 +58,13 @@ label {
 }
 
 input {
+    font-family: inherit;
+    letter-spacing: -0.02rem;
     box-sizing: border-box;
     color: var(--on-surface);
-    background-color: var(--surface);
+    background-color: var(--background);
     border: none;
-    border-bottom: 2px solid var(--secondary-container);
+    border-bottom: 2px solid var(--surface);
     margin-bottom: 10px;
     padding: 5px;
     font-size: 1.1rem;
@@ -52,16 +74,17 @@ input {
 
 input:focus {
     outline: none;
-    background-color: var(--background);
+    background-color: var(--surface);
+
 }
 
 textarea#message {
     box-sizing: border-box;
     font-family: inherit;
     color: var(--on-surface);
-    background-color: var(--surface);
+    background-color: var(--background);
     border: none;
-    border-bottom: 2px solid var(--secondary-container);
+    border-bottom: 2px solid var(--surface);
     margin-bottom: 10px;
     padding: 5px;
     font-size: 1rem;
@@ -72,15 +95,29 @@ textarea#message {
 
 textarea#message:focus {
     outline: none;
-    background-color: var(--background);
+    background-color: var(--surface);
+
 }
 
 .submitbutton {
+    font-family: inherit;
+    letter-spacing: 0.04rem;
     font-size: 1rem;
     padding: 10px 20px;
-    background-color: var(--secondary-container);
-    border: 1px var(--surface) solid;
+    background-color: var(--on-tertiary);
+    border: 2px var(--surface) solid;
     border-radius: 0.3rem;
     color: var(--on-background);
+}
+
+.submitbutton:hover {
+    background-color: var(--background);
+    border: 2px var(--on-tertiary) solid;
+
+
+}
+
+::placeholder {
+    color: rgb(141, 141, 141);
 }
 

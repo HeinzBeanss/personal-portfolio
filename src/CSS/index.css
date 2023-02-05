@@ -1,4 +1,4 @@
-body.dark {
+body {
   --primary: #96ccff;
   --on-primary: #003353;
   --primary-container: #004a75;
@@ -31,6 +31,7 @@ body.dark {
   --outline-variant: #42474e;
   --scrim: #000000;
   --svg: invert(100%) sepia(100%) saturate(0%) hue-rotate(275deg) brightness(100%) contrast(103%);
+  --filterrest: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
 }
 
 body.light {
@@ -52,7 +53,7 @@ body.light {
   --on-error-container: #410002;
   --background: #fcfcff;
   --on-background: #1a1c1e;
-  --surface: #fcfcff;
+  --surface: #e0e0e0;
   --on-surface: #1a1c1e;
   --surface-variant: #dee3eb;
   --on-surface-variant: #42474e;
@@ -69,11 +70,20 @@ body.light {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --h1-size: 3.2rem;
+  --h1-weight: 500;
+  --h2: 2.4rem;
+  --h3-size: 2rem;
+  --h3-weight: 400;
+
+  --p-size: 1.2rem;
+  --p-lineheight: 1.8rem;
+
+
 }
 
 code {

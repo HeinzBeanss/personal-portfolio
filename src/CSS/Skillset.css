@@ -4,35 +4,51 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 
 .skillsettitle {
-    font-size: 3.6rem;
+    margin: 0;
+    margin-top: 40px;
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
     /* margin-bottom: 400px; */
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.6);
 }
 
 .skillsetdesc {
-    max-width: 650px;
-    font-size: 1.4rem;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    max-width: 1000px;
+    font-size: var(--p-size);
+    line-height: var(--p-lineheight);
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 .skillname {
-    font-size: 2.4rem;
-    font-weight: 500;
-    /* margin-bottom: 400px; */
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+    border-bottom: 1px solid var(--on-surface);
 }
 
 .skillscontainer {
     width: 900px;
     /* border: 2px solid red; */
     position: relative;
-    margin: 400px 0;
+    margin-top: 300px;
+    margin-bottom: 390px;
 }
 .skillsetlogo {
     width: 70px;
     border-radius: 0.2rem;
+}
+
+.skillsetlogo:hover {
+    /* padding: 5px; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* .javascript {
@@ -87,7 +103,7 @@
 
 .line-middle-one {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(55px) translateY(35px);
@@ -96,7 +112,7 @@
 
 .line-middle-two {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(355px) translateY(35px);
@@ -105,7 +121,7 @@
 
 .line-middle-three{
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(655px) translateY(35px);
@@ -114,7 +130,7 @@
 
 .line-top-one {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(-10px) translateY(-95px) rotate(120deg);
@@ -123,7 +139,7 @@
 
 .line-top-two {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(120px) translateY(-95px) rotate(60deg);
@@ -132,7 +148,7 @@
 
 .line-top-three {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(290px) translateY(-95px) rotate(120deg);
@@ -141,7 +157,7 @@
 
 .line-top-four {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(590px) translateY(-95px) rotate(120deg);
@@ -150,7 +166,7 @@
 
 .line-top-five {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(720px) translateY(-95px) rotate(60deg);
@@ -159,7 +175,7 @@
 
 .line-bottom-one {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(-10px) translateY(165px) rotate(60deg);
@@ -168,7 +184,7 @@
 
 .line-bottom-two {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(120px) translateY(165px) rotate(120deg);
@@ -177,7 +193,7 @@
 
 .line-bottom-three {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(290px) translateY(165px) rotate(60deg);
@@ -186,7 +202,7 @@
 
 .line-bottom-four {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(590px) translateY(165px) rotate(60deg);
@@ -195,7 +211,7 @@
 
 .line-bottom-five {
     position: absolute;
-    border: 2px var(--surface) solid;
+    border: 1.5px solid var(--on-tertiary);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(720px) translateY(165px) rotate(120deg);
@@ -254,6 +270,45 @@
 
 /* Currently Working On */
 
+.currentlyworkingoncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--surface);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.currentlyworkingondesc {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    max-width: 1000px;
+    margin-bottom: 0;
+    font-size: var(--p-size);
+    line-height: var(--p-lineheight);
+
+}
+
+.currentlyworkingontitle {
+    margin: 0;
+    margin-top: 20px;
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+    border-bottom: 1px solid var(--on-surface);
+}
+
+.currentlyworkingonskill {
+    margin: 20px 0;
+    text-align: left;
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+    /* border-bottom: 1px solid var(--on-surface); */
+}
+
 .slideshowarea {
     display: flex;
     flex-direction: row;        
@@ -269,11 +324,22 @@
     width: 180px;
     border-radius: 0.5rem;
     padding: 10px;
-    background-color: var(--surface);
+    background-color: var(--background);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
 }
 
 .slideshowimage {
     width: 150px;
     height: 150px;
+}
+
+.Express {
+    filter: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
+}
+
+.leftarrow, .rightarrow {
+    /* filter: invert(13%) sepia(15%) saturate(396%) hue-rotate(159deg) brightness(97%) contrast(96%); */
+
+    filter: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
+    cursor: pointer;
 }

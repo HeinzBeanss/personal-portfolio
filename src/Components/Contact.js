@@ -5,8 +5,9 @@ const Contact = () => {
 
     return (
         <div className="contact" >
-                <h2 className="titlecontact">Get in touch!</h2>
-                <p className="desccontact">Have any questions? I'd love nothing more than to answer them, feel free to drop me an email using the form below!</p>
+                <h2 className="titlecontact">Get in touch</h2>
+                <p className="desccontact">Have any questions? I'd love nothing more than to answer them, feel free to drop me an email using the form below.</p>
+                <div className="contactformline"></div>
                 <form className="contactform" action="https://formsubmit.co/f9c5245a9e75583fb8ccc82f0885ca47" method="POST">
 
                     <label htmlFor="name">NAME</label>

@@ -11,7 +11,7 @@ const Introduction = () => {
     let Arrow = document.querySelector(".arrow");
 
     let top = IntroDesc.getBoundingClientRect().top;
-    if ( top < window.innerHeight - 250) {
+    if ( top < window.innerHeight - 200) {
       IntroDesc.classList.add("alreadyonpage")
     } else {
       IntroDesc.classList.add("notonpage");
@@ -30,7 +30,7 @@ const Introduction = () => {
         }
       }
       let top = IntroDesc.getBoundingClientRect().top;
-      if ( top < window.innerHeight - 250 && IntroDesc.classList.contains("notonpage")) {
+      if ( top < window.innerHeight - 200 && IntroDesc.classList.contains("notonpage")) {
         IntroDesc.classList.add("fadeclass");
       }
     })
@@ -102,8 +102,9 @@ const Introduction = () => {
                 {/* <h1 className="introtitledavid"></h1> */}
             </div>
 
-            <div>
-                <p className="introductiondesc">I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom! I'm an aspiring web developer located in the United Kingdom!</p>
+            <div className="introductiondesccontainer">
+                <h3 className="introductiondescsub">A little about <i>me...</i></h3>
+                <p className="introductiondesc">You won't find a more committed individual than myself with regards to mastering the art of web development. Starting my independent journey over half a year ago I have since self-studied consistently, achieving profiency in HTML, CSS, and JavaScript alongside its most popular Framework, ReactJS. These skills, alongside a combination of experience with several Adobe Design software from my Graphic Design degree from the University of Huddersfield, make me both a versatile developer <i>and</i> designer.</p>
             </div>
         </div>
     )

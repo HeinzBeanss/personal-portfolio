@@ -28,12 +28,37 @@
     letter-spacing: 0.15rem;
 }
 
-.introductiondesc {
-    font-size: 1.6rem;
-    max-width: 650px;
+.introductiondesccontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--surface);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.introductiondescsub {
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+    border-bottom: 1px solid var(--on-surface);
+}
 
+.introductiondesc {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+    font-size: var(--p-size);
+    line-height: var(--p-lineheight);
+    max-width: 1000px;
+    text-align: center;
     opacity: 0;
     transform: translateY(70px);
+    
+
 }
 
 /* fade animation */

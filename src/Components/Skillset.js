@@ -49,7 +49,7 @@ const Skillset = () => {
     return (
         <div className="Skillset">
             <h2 className="skillsettitle">Technology Stack</h2> 
-            <p className="skillsetdesc">Just a description to change! Just a description to change! Just a description to change! Just a description to change! Just a description to change! Just a description to change! </p>
+            <p className="skillsetdesc">Throughout the course of my studying I've come across many core technologies of web development, the majority of which are shown below.</p>
             <p className="skillname">{skillname}</p>
             <div className="skillscontainer">
 
@@ -88,24 +88,25 @@ const Skillset = () => {
                 <a href="https://www.adobe.com/uk/products/aftereffects.html" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo aftereffects" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" onMouseOver={changeSkillName} alt="Adobe After Effects" /></a>
             
             </div>
-
-            <h3> Currently working on</h3>
-            <p className="currentlyworkingondesc">There will <i>always</i> be something to learn, at the moment I'm currently advancing my knowledge in:</p>
-            <p>{currentlyworkingonskill}</p>
-             <div className="slideshowarea">
-                <img src={leftarrow} alt="left arrow" onClick={moveBackward}></img>
-                <div className="slideshow">
-                    {/* <Slide arrows="false" slidesToScroll={1} slidesToShow={2}> */}
-                    {currentlyWorkingOnArray.map((skill, index) => (
-                        <a href={skill.website} key={index} target="_blank" rel="noopener noreferrer"className="slideshowimagecontainer">
-                            <img className="slideshowimage" src={skill.image} alt={skill.name} key={index}></img>
-                        </a>
-                        )
-                    )}
-                    {/* </Slide> */}
-                </div>
-                <img src={rightarrow} alt="right arrow" onClick={moveForward}></img>
-            </div> 
+            <div className="currentlyworkingoncontainer">
+                <h3 className="currentlyworkingontitle"> Currently learning about...</h3>
+                <p className="currentlyworkingondesc">As technologies continue to evolve I'm a firm believer that there will <i>always</i> be something to learn. At the moment I'm currently working towards educating myself on back-end development, therefore advancing my knowledge in:</p>
+                <h3 className="currentlyworkingonskill">{currentlyworkingonskill}</h3>
+                 <div className="slideshowarea">
+                    <img className="leftarrow" src={leftarrow} alt="leftarrow" onClick={moveBackward}></img>
+                    <div className="slideshow">
+                        {/* <Slide arrows="false" slidesToScroll={1} slidesToShow={2}> */}
+                        {currentlyWorkingOnArray.map((skill, index) => (
+                            <a href={skill.website} key={index} target="_blank" rel="noopener noreferrer"className="slideshowimagecontainer">
+                                <img className={`${skill.name} slideshowimage`} src={skill.image} alt={skill.name} key={index}></img>
+                            </a>
+                            )
+                        )}
+                        {/* </Slide> */}
+                    </div>
+                    <img className="rightarrow" src={rightarrow} alt="rightarrow" onClick={moveForward}></img>
+                </div> 
+            </div>
         </div>
 
 

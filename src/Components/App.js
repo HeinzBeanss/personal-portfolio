@@ -14,8 +14,6 @@ const App = () => {
 
   return (
     <div className="App">
-
-      <Theme />
       <Introduction />
       <Skillset />
       <PersonalProjects />

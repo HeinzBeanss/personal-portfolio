@@ -296,6 +296,7 @@
 .currentlyworkingontitle {
     margin: 0;
     margin-top: 20px;
+    margin-bottom: 20px;
     font-size: var(--h3-size);
     font-weight: var(--h3-weight);
     border-bottom: 1px solid var(--on-surface);

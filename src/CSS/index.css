@@ -34,7 +34,7 @@ body {
   --filterrest: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
 }
 
-body.light {
+/* body.light {
   --primary: #00639a;
   --on-primary: #ffffff;
   --primary-container: #cee5ff;
@@ -66,7 +66,7 @@ body.light {
   --outline-variant: #c2c7cf;
   --scrim: #000000;
   --svg: invert(0%) sepia(92%) saturate(32%) hue-rotate(22deg) brightness(97%) contrast(100%);
-}
+} */
 
 body {
   margin: 0;
@@ -76,7 +76,7 @@ body {
 
   --h1-size: 3.2rem;
   --h1-weight: 500;
-  --h2: 2.4rem;
+  --h2-size: 2.4rem;
   --h3-size: 2rem;
   --h3-weight: 400;
 

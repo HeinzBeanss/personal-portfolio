@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../CSS/Introduction.css"
 import downarrow from "../Assets/arrow-down.svg"
 
@@ -11,7 +11,7 @@ const Introduction = () => {
     let Arrow = document.querySelector(".arrow");
 
     let top = IntroDesc.getBoundingClientRect().top;
-    if ( top < window.innerHeight - 200) {
+    if ( top < window.innerHeight - 100) {
       IntroDesc.classList.add("alreadyonpage")
     } else {
       IntroDesc.classList.add("notonpage");
@@ -30,26 +30,39 @@ const Introduction = () => {
         }
       }
       let top = IntroDesc.getBoundingClientRect().top;
-      if ( top < window.innerHeight - 200 && IntroDesc.classList.contains("notonpage")) {
+      if ( top < window.innerHeight - 100 && IntroDesc.classList.contains("notonpage")) {
         IntroDesc.classList.add("fadeclass");
       }
     })
   },[])
 
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        console.log("animating process begins")
+        const wordstoanimate = document.querySelectorAll(".spantoanimate");
+        wordstoanimate.forEach((word => {
+          word.classList.add("animate")
+        }))
+      }, 8000);
+      return () => clearTimeout(timer);
+  }, [])
+
     return (
         <div className="introduction">
           <img className="arrow" src={downarrow} alt="down-arrow"></img>
-            <div className="introductiontitle">
+
+            <div className="introductioncontainer">
+              <div className="introductiontextcontainer">
                 <h1 className="introtitlehello">
                     <Typewriter options={{
                       autoStart: true,
                       loop: false,
-                      delay: 80,
+                      delay: 45,
                     }}
                       onInit={(typewriter) => {
 
                         typewriter.typeString('Hello!')
-                        .pauseFor(1200)
+                        .pauseFor(800)
                         .callFunction(() => {
                             const cursorType = document.querySelector(".Typewriter__cursor");
                             cursorType.style = "visibility:hidden";
@@ -62,8 +75,8 @@ const Introduction = () => {
                 <h1 className="introtitlemynameis">
                     <Typewriter
                     options={{
-                        loop: true,
-                        delay: 80,
+                        loop: false,
+                        delay: 45,
                         deleteSpeed: 0,
                       }}
 
@@ -71,35 +84,33 @@ const Introduction = () => {
                     typewriter
                       .callFunction(() => {
                           const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
-                          cursorTypeOne.style = "visibility:hidden";
+                          cursorTypeOne.style = "display:none";
                       })
-                      .pauseFor(2000)
+                      .pauseFor(1600)
                       .callFunction(() => {
                         const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
                         cursorTypeOne.style = "visibility:visible";
                     })
                     .pauseFor(200)
-                    .typeString('I\'m an aspiring developer.')
-                    .pauseFor(1200)
-                    .deleteChars(23)
-                    .pauseFor(500)
-                      .typeString(' a programming enthusiast!')
-                      .pauseFor(1200)
-                      .deleteChars(25)
-                      .pauseFor(500)
-                      .typeString('your next employee?')
-                      .pauseFor(1200)
-                      .deleteChars(19)
-                      .pauseFor(500)
-                      .typeString('<strong><span style="color: var(--primary)">David. </span></strong>')
-                      .pauseFor(1500)
-                      .typeString('<strong><span style="color: var(--primary)">:)</span></strong>')
-                      .pauseFor(10000)
-                      .start();
+                    .changeDelay(50)
+                    .typeString('<p>I\'m </p>')
+                    .callFunction(() => {
+                      const timer = setTimeout(() => {
+                        console.log("clearing typewriter cursor")
+                        const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
+                        cursorTypeOne.style = "display:none";
+                      }, 2700);
+                      return () => clearTimeout(timer);
+                  })
+                    .typeString('<div class="words"><span class="spantoanimate">an aspiring developer.</span><span class="spantoanimate">a programming enthusiast.</span><span class="spantoanimate">your next employee.</span><span class="spantoanimate">David. :)</span><span class="spantoanimate">an aspiring developer.</span></div>')
+                    // .pauseFor(1200)
+
+                    .start();
                   }}
                 />
             </h1>
                 {/* <h1 className="introtitledavid"></h1> */}
+                </div>
             </div>
 
             <div className="introductiondesccontainer">
@@ -111,3 +122,23 @@ const Introduction = () => {
 }
 
 export default Introduction;
+
+
+// .pauseFor(200)
+// .typeString('<span>I\'m an aspiring developer.</span>')
+// .pauseFor(1200)
+// .deleteChars(23)
+// .pauseFor(500)
+//   .typeString(' a programming enthusiast!')
+//   .pauseFor(1200)
+//   .deleteChars(25)
+//   .pauseFor(500)
+//   .typeString('your next employee?')
+//   .pauseFor(1200)
+//   .deleteChars(19)
+//   .pauseFor(500)
+//   .typeString('<strong><span style="color: var(--primary)">David. </span></strong>')
+//   .pauseFor(1500)
+//   .typeString('<strong><span style="color: var(--primary)">:)</span></strong>')
+//   .pauseFor(10000)
+//   .start();

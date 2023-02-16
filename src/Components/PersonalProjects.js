@@ -35,6 +35,7 @@ const PersonalProjects = () => {
 
     return (
     <div className="PersonalProjects">
+        <div id="Projects" className="anchorrefproject"></div>
         <h2 className="personalprojectsheader">Projects</h2>
         <p className="personalprojectdesc">A showcase of several projects I've created using a variety of technologies.</p>
         <div className="projectarea">

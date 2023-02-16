@@ -4,6 +4,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.anchorrefskill {
+    position: absolute;
+    /* border: 1px red solid; */
+    height: 100px;
+    /* width: 100%; */
+    top: -100px;
 }
 
 .skillsettitle {
@@ -344,3 +353,31 @@
     filter: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
     cursor: pointer;
 }
+
+  /* Tablet Breakpoint */
+  @media (max-width: 1200px) {
+
+  }
+  
+  /* Phone Breakpoint*/
+  @media (max-width: 600px) {
+      .skillsetdesc, .currentlyworkingondesc {
+          padding: 0px 20px;
+      }
+
+      .slideshowimage {
+        width: 60px;
+        height: 60px;
+      }
+
+      .slideshowimagecontainer {
+        width: 80px;
+      }
+
+      .slideshow {
+        gap: 10px;
+    }
+    .rightarrow, .leftarrow {
+        width: 35px;
+    }
+    }

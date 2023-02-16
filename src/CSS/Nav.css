@@ -1,15 +1,14 @@
 nav {
-    position: sticky;
+    position: fixed;
     /* border-bottom: 1px solid red; */
     padding: 20px 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.navtitle {
-
+    background-color: var(--background);
+    width: 100%;
+    z-index: 1;
 }
 
 .navlinks {

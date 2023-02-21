@@ -171,8 +171,15 @@
     }
       .project {
         flex-direction: column;
+        gap: 20px;
       }
-
+      .projectinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .gifbackground {
         width: 100%;
       }
@@ -183,4 +190,19 @@
         height: 100%;
         object-fit: cover;
       }
+
+      .left {
+        order: 2;
+      }
+
+      .projectarea {
+        gap: 20px;
+    }
+    
+    .projectstack {
+        padding-bottom: 10px;
+        border-bottom: 2px solid var(--on-tertiary);
+        width: 100%;
+        font-size: 0.8rem;
+    }
     }

@@ -19,3 +19,11 @@ nav {
 .navlinks {
     list-style-type: none;
 }
+
+  /* Phone Breakpoint*/
+  @media (max-width: 600px) {
+    nav {
+        display: none;
+        /* visibility: hidden; */
+    }
+  }

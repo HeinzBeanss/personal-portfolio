@@ -4,6 +4,9 @@ import "../CSS/PersonalProjects.css";
 import instagramgif from "../Assets/instagramgif.gif"
 import battleshipgif from "../Assets/battleshipgif.gif";
 import shoppingcartgif from "../Assets/shoppingcartgif.gif";
+import mobileinstagramgif from "../Assets/mobile-instagram.gif"
+import mobilebattleshipgif from "../Assets/mobile-battleship.gif";
+import mobileshoppingcartgif from "../Assets/mobile-shoppingcart.gif";
 
 const PersonalProjects = () => {
 
@@ -12,7 +15,7 @@ const PersonalProjects = () => {
 
         projects.forEach(project => {
             let top = project.getBoundingClientRect().top;
-            if (top < window.innerHeight - 250) {
+            if (top < window.innerHeight - 200) {
                 project.classList.add("alreadyonpage");
             } else {
                 project.classList.add("notonpage");
@@ -22,7 +25,7 @@ const PersonalProjects = () => {
         window.addEventListener("scroll", () => {
             projects.forEach(project => {
                 let top = project.getBoundingClientRect().top;
-                if ( top < window.innerHeight - 250 && project.classList.contains("notonpage")) {
+                if ( top < window.innerHeight - 200 && project.classList.contains("notonpage")) {
                     if (project.classList.contains("left")) {
                         project.classList.add("fadeprojectleft");
                     } else if (project.classList.contains("right")) {
@@ -41,7 +44,12 @@ const PersonalProjects = () => {
         <div className="projectarea">
             <div className="project instagram">
                 <div className="gifbackground">
-                    <a href="https://heinzbeanss.github.io/instagram/" target="_blank" rel="noopener noreferrer"><img src={instagramgif} alt="instagram clone" className="gif"></img></a>
+                    <a href="https://heinzbeanss.github.io/instagram/" target="_blank" rel="noopener noreferrer">
+                        <img 
+                            srcSet={`${mobileinstagramgif} 600w, ${instagramgif} 700w`}
+                            sizes="(max-width: 600px) 480px, 700px" src={instagramgif} alt="instagram clone" className="gif">
+                            </img>
+                        </a>
                 </div>
                 <div className="projectinfo right">
                     <h3 className="projecttitle">Instagram Clone</h3>
@@ -58,12 +66,21 @@ const PersonalProjects = () => {
 
                 </div>
                 <div className="gifbackground">
-                <a href="https://heinzbeanss.github.io/battleship/" target="_blank" rel="noopener noreferrer"><img src={battleshipgif} alt="battleship project" className="gifright"></img></a>
+                <a href="https://heinzbeanss.github.io/battleship/" target="_blank" rel="noopener noreferrer">                        
+                    <img 
+                    srcSet={`${mobilebattleshipgif} 600w, ${battleshipgif} 700w`}
+                    sizes="(max-width: 600px) 480px, 700px" src={battleshipgif} alt="battleship game" className="gif">
+                    </img></a>
                 </div>
             </div>
             <div className="project shoppingcart">
             <div className="gifbackground">
-            <a href="https://heinzbeanss.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer"><img src={shoppingcartgif} alt="shopping cart project" className="gif"></img></a>
+            <a href="https://heinzbeanss.github.io/shopping-cart/" target="_blank" rel="noopener noreferrer">                        
+                <img 
+                    srcSet={`${mobileshoppingcartgif} 600w, ${shoppingcartgif} 700w`}
+                    sizes="(max-width: 600px) 480px, 700px" src={shoppingcartgif} alt="shopping cart project" className="gif">
+                </img>
+            </a>
             </div>
                     <div className="projectinfo right">
                         <h3 className="projecttitle">Shopping Cart Mockup</h3>

@@ -95,12 +95,17 @@ const Introduction = () => {
                     .changeDelay(50)
                     .typeString('<p>I\'m </p>')
                     .callFunction(() => {
+                      if (window.innerWidth < 600) {
+                        const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
+                        cursorTypeOne.style = "display:none";
+                      } else {
                       const timer = setTimeout(() => {
                         console.log("clearing typewriter cursor")
                         const cursorTypeOne = document.querySelectorAll(".Typewriter__cursor")[1];
                         cursorTypeOne.style = "display:none";
                       }, 2700);
                       return () => clearTimeout(timer);
+                    }
                   })
                     .typeString('<div class="words"><span class="spantoanimate">an aspiring developer.</span><span class="spantoanimate">a programming enthusiast.</span><span class="spantoanimate">your next employee.</span><span class="spantoanimate">David. :)</span><span class="spantoanimate">an aspiring developer.</span></div>')
                     // .pauseFor(1200)

@@ -195,7 +195,7 @@
 @keyframes fade {
     from {
         opacity: 0;
-        transform: translateY(- 70px);
+        transform: translateY(-70px);
     }
     to {
         opacity: 1;
@@ -268,6 +268,118 @@
       .introductiondesccontainer {
           padding: 0px 20px;
       }
+
+      .introductiontextcontainer {
+        width: 320px;
+        padding: 20px;
+    }
+
+    @keyframes spin_words {
+        10% {
+            transform:  translateX(-105%);
+        }
+        25% {
+            transform:  translateX(-100%);
+        }
+        35% {
+            transform:  translateX(-205%);
+        }
+        50% {
+            transform:  translateX(-200%);
+        }
+        60% {
+            transform:  translateX(-305%);
+        }
+        75% {
+            transform:  translateX(-300%);
+        }
+        85% {
+            transform:  translateX(-405%);
+        }
+        100% {
+            transform:  translateX(-400%);
+        }
+    }
+
+    .arrow {
+        top: 20px;
+        right: auto;
+    }
+
+    .hidden {
+        top: 20px;
+        right: auto;
+    }
+    
+    .words {
+        display: flex;
+        flex-direction: row;
+        /* display: inline-block; */
+        overflow: visible;
+    }
+
+ 
+    
+    .Typewriter__cursor {
+        color: var(--primary);
+        font-size: 4rem;
+    }
+
+    .typewritersecond {
+        font-size: 3rem;
+    }
+
+    .introtitlemynameis {
+        /* flex-direction: column; */
+        font-size: 2.5rem;
+        /* line-height: 5rem; */
+        font-weight: 600;
+        line-height: 2.5rem;
+        height: 10rem;
+        /* height: fit-content; */
+        white-space: normal;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .spantoanimate {
+        display: block;
+        height: fit-content;
+        min-width: 320px;
+        overflow: visible;
+        padding-left: 0px;
+        /* border: 1px solid red; */
+        /* font-size: 1rem; */
+    }
+
+    .Typewriter__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .animate {
+        text-align: center;
+        animation: spin_words 9s infinite;
+        /* animation: 0; */
+    }
+
+    .introductiontextcontainer {
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        height: fit-content;
+    }
+
+    .introtitlehello {
+        margin-left: 60px;
+    }
+
+    .Typewriter__wrapper > p {
+        text-align: center;
+    }
     }
   
     

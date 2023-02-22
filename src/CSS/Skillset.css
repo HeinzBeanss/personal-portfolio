@@ -22,9 +22,11 @@
     font-weight: var(--h1-weight);
     /* margin-bottom: 400px; */
     text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.6);
+    
 }
 
 .skillsetdesc {
+    color: var(--paragraph-text);
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     max-width: 1000px;
@@ -40,7 +42,7 @@
     text-align: left;
     font-size: var(--h3-size);
     font-weight: var(--h3-weight);
-    border-bottom: 1px solid var(--on-surface);
+    /* border-bottom: 1px solid var(--surface); */
 }
 
 .skillscontainer {
@@ -112,7 +114,7 @@
 
 .line-middle-one {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(55px) translateY(35px);
@@ -121,7 +123,7 @@
 
 .line-middle-two {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(355px) translateY(35px);
@@ -130,7 +132,7 @@
 
 .line-middle-three{
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(655px) translateY(35px);
@@ -139,7 +141,7 @@
 
 .line-top-one {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(-10px) translateY(-95px) rotate(120deg);
@@ -148,7 +150,7 @@
 
 .line-top-two {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(120px) translateY(-95px) rotate(60deg);
@@ -157,7 +159,7 @@
 
 .line-top-three {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(290px) translateY(-95px) rotate(120deg);
@@ -166,7 +168,7 @@
 
 .line-top-four {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(590px) translateY(-95px) rotate(120deg);
@@ -175,7 +177,7 @@
 
 .line-top-five {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(720px) translateY(-95px) rotate(60deg);
@@ -184,7 +186,7 @@
 
 .line-bottom-one {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(-10px) translateY(165px) rotate(60deg);
@@ -193,7 +195,7 @@
 
 .line-bottom-two {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(120px) translateY(165px) rotate(120deg);
@@ -202,7 +204,7 @@
 
 .line-bottom-three {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(290px) translateY(165px) rotate(60deg);
@@ -211,7 +213,7 @@
 
 .line-bottom-four {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(590px) translateY(165px) rotate(60deg);
@@ -220,7 +222,7 @@
 
 .line-bottom-five {
     position: absolute;
-    border: 1.5px solid var(--on-tertiary);
+    border: 1px solid var(--paragraph-text);
     border-radius: 1rem;
     width: 190px;
     transform: translateX(720px) translateY(165px) rotate(120deg);
@@ -293,6 +295,7 @@
 }
 
 .currentlyworkingondesc {
+    color: var(--paragraph-text);
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     max-width: 1000px;
@@ -308,7 +311,8 @@
     margin-bottom: 20px;
     font-size: var(--h3-size);
     font-weight: var(--h3-weight);
-    border-bottom: 1px solid var(--on-surface);
+    /* border-bottom: 1px solid var(--on-surface); */
+    
 }
 
 .currentlyworkingonskill {
@@ -317,6 +321,7 @@
     font-size: var(--h3-size);
     font-weight: var(--h3-weight);
     /* border-bottom: 1px solid var(--on-surface); */
+    /* color: var(--tertiary); */
 }
 
 .slideshowarea {
@@ -344,13 +349,13 @@
 }
 
 .Express {
-    filter: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
+    filter: var(--svg);
 }
 
 .leftarrow, .rightarrow {
     /* filter: invert(13%) sepia(15%) saturate(396%) hue-rotate(159deg) brightness(97%) contrast(96%); */
 
-    filter: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
+    filter: var(--filtertest);
     cursor: pointer;
 }
 

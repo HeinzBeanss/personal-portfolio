@@ -53,7 +53,7 @@ const PersonalProjects = () => {
                 </div>
                 <div className="projectinfo right">
                     <h3 className="projecttitle">Instagram Clone</h3>
-                    <p className="projectdesc">A clone of the popular social media platform Instagram, the goal here was to achieve around 80% accuracy of the real website. Using React for the front end and Firebase for the backend, users can create an account, upload their own posts alongside captions, edit their profile picture and description, as well as follow and like other user's and their posts respectively.</p>
+                    <p className="projectdesc">A clone of the popular social media platform Instagram, the goal here was to achieve around 80% accuracy of the real website. Using React for the front end and Firebase for the backend, users can create an account, upload their own posts alongside captions, edit their profile picture and description, as well as follow and like other users and their posts respectively.</p>
                     <p className="projectstack">Created using ReactJS</p>
                 </div>
 
@@ -61,7 +61,7 @@ const PersonalProjects = () => {
             <div className="project battleship">
                 <div className="projectinfo left">
                         <h3 className="projecttitle">Battleship</h3>
-                        <p className="projectdesc">A simple version of the popular strategy type guessing game Battleship, players can place their shapes ranging from different sizes and orientations. The user then takes turns against an easy, however not completely clueless, computer in a battle in which the first player to hit all the other's ships achieves victory.</p>
+                        <p className="projectdesc">A simple version of the popular strategy-type guessing game Battleship, players can place their shapes ranging from different sizes and orientations. The user then takes turns against an easy, however, not completely clueless computer in a competitive battle in which the first player to hit all the other's ships will be announced the victor.</p>
                         <p className="projectstack">Created using Vanilla JavaScript</p>
 
                 </div>
@@ -84,7 +84,7 @@ const PersonalProjects = () => {
             </div>
                     <div className="projectinfo right">
                         <h3 className="projecttitle">Shopping Cart Mockup</h3>
-                        <p className="projectdesc">A mockup of a card selling store page alongside a functioning cart where the user can update the contents of their cart before heading to the checkout. The dynamically designed grid system responds perfectly to a multitude of devices ranging in resolution.</p>
+                        <p className="projectdesc">A mockup of a card-selling store page alongside a functioning cart where the user can update the contents of their cart before heading to the checkout. The dynamically designed grid system responds perfectly to a multitude of devices ranging in resolution.</p>
                         <p className="projectstack">Created using ReactJS</p>
 
                     </div>

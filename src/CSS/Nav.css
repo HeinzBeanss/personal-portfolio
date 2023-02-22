@@ -19,13 +19,15 @@ nav {
 
 .navitem {
     cursor: pointer;
+    color: var(--paragraph-text);
+}
+
+.navitem:hover {
+  color: var(--primary)
 }
 
   /* Tablet Breakpoint */
   @media (max-width: 1200px) {
-    nav {
-
-    }
 }
 
   /* Phone Breakpoint*/

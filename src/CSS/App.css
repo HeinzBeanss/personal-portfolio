@@ -34,5 +34,5 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--on-tertiary);
+  background: var(--primary);
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import "../CSS/Skillset.css"
 import leftarrow from "../Assets/chevron-left.svg";
@@ -50,7 +49,7 @@ const Skillset = () => {
         <div className="Skillset">
             <div id="TechStack" className="anchorrefskill"></div>
             <h2 className="skillsettitle">Technology Stack</h2> 
-            <p className="skillsetdesc">Throughout the course of my studying I've come across many core technologies of web development, the majority of which are shown below.</p>
+            <p className="skillsetdesc">Throughout the course of my studying, I've come across many core technologies of web development, the majority of which are shown below.</p>
             <p className="skillname">{skillname}</p>
             <div className="skillscontainer">
 
@@ -91,7 +90,7 @@ const Skillset = () => {
             </div>
             <div className="currentlyworkingoncontainer">
                 <h3 className="currentlyworkingontitle"> Currently learning about...</h3>
-                <p className="currentlyworkingondesc">As technologies continue to evolve I'm a firm believer that there will <i>always</i> be something to learn. At the moment I'm currently working towards educating myself on back-end development, therefore advancing my knowledge in:</p>
+                <p className="currentlyworkingondesc">As technologies continue to evolve, I'm a firm believer that there will <i>always</i> be something to learn. At the moment, I'm currently working towards educating myself on back-end development, therefore, advancing my knowledge in:</p>
                 <h3 className="currentlyworkingonskill">{currentlyworkingonskill}</h3>
                  <div className="slideshowarea">
                     <img className="leftarrow" src={leftarrow} alt="leftarrow" onClick={moveBackward}></img>

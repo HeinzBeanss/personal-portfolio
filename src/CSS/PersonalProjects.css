@@ -27,6 +27,7 @@
 }
 
 .personalprojectdesc {
+    color: var(--paragraph-text);
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     font-size: var(--p-size);
@@ -57,6 +58,7 @@
 
 .projectinfo {
     opacity: 0;
+    
     /* transform: translateX(200px); */
     /* border-bottom: solid 1px var(--primary); */
 }
@@ -117,8 +119,8 @@
     border-radius: 0.4rem;
     /* width: 700px;
     height: 350px; */
-    left: 10px;
-    top: 10px;
+    left: 8px;
+    top: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) 2.2px 2.5px 2.6px;
 }
 
@@ -128,8 +130,8 @@
     border-radius: 0.4rem;
     /* width: 700px;
     height: 350px; */
-    right: 10px;
-    top: 10px;
+    right: 8px;
+    top: 8px;
     box-shadow: rgba(0, 0, 0, 0.25) -2.2px 2.5px 2.6px;
 }
 
@@ -140,11 +142,12 @@
     font-size: var(--h3-size);
     font-weight: var(--h3-weight);
     /* text-decoration: underline; */
-    border-bottom: 1px solid var(--on-surface);
+    /* border-bottom: 1px solid var(--primary); */
 
 }
 
 .projectdesc {
+  color: var(--paragraph-text);
     max-width: 500px;
     font-size: var(--p-size);
     line-height: var(--p-lineheight);
@@ -155,6 +158,7 @@
 }
 
 .projectstack {
+  color: var(--tertiary);
     font-style: italic;
 }
 

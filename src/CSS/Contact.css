@@ -31,6 +31,7 @@
 }
 
 .desccontact {
+    color: var(--paragraph-text);
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -62,6 +63,7 @@
 }
 
 label {
+    color: var(--paragraph-text);
     font-size: 0.8rem;
     font-weight: 500;
     margin-bottom: 5px;
@@ -114,16 +116,18 @@ textarea#message:focus {
     letter-spacing: 0.04rem;
     font-size: 1rem;
     padding: 10px 20px;
-    background-color: var(--on-tertiary);
-    border: 2px var(--surface) solid;
+    background-color: var(--background);
+    border: 2px var(--primary) solid;
+    /* background-color: var(--on-tertiary);
+    border: 2px var(--surface) solid; */
     border-radius: 0.3rem;
     color: var(--on-background);
 }
 
 .submitbutton:hover {
-    background-color: var(--background);
+    background-color: var(--on-tertiary);
     border: 2px var(--on-tertiary) solid;
-
+    color: var(--paragraph-text);
 
 }
 

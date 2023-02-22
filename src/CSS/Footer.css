@@ -4,11 +4,11 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--surface);
-    border-top: 2px var(--on-tertiary) solid;
+    border-top: 2px var(--tertiary-container) solid;
 }
 
 .footername {
-    color: var(--primary);
+    color: var(--on-background);
     font-family: 'Exo 2', sans-serif;
     font-weight: 300;
 }

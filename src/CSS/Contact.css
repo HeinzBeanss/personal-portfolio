@@ -1,6 +1,7 @@
 .contact {
     margin: 30px 0;
     padding: 30px 0;
+    padding-bottom: 40px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -135,6 +136,34 @@ textarea#message:focus {
   /* Tablet Breakpoint */
   @media (max-width: 1200px) {
 
+    .contact {
+        padding: 20px 40px;
+        padding-bottom: 30px;
+    }
+
+    .contactform {
+        padding: 10px;
+        min-width: auto;
+        width: 100%;
+        max-width: 750px;
+
+
+
+        /* min-width: 800px; */
+    }
+
+    input, textarea#message {
+        font-size: 0.9rem;
+        /* min-width: 100%; */
+    }
+
+    textarea#message {
+        /* max-width: 100%; */
+    }
+
+    .submitbutton {
+        margin: auto;
+    }
   }
   
   /* Phone Breakpoint*/
@@ -142,6 +171,7 @@ textarea#message:focus {
 
     .contact {
         padding: 20px 20px;
+        padding-bottom: 30px;
     }
 
     .contactform {
@@ -158,10 +188,6 @@ textarea#message:focus {
 
     textarea#message {
         /* max-width: 100%; */
-    }
-    
-    label {
-
     }
 
     .submitbutton {

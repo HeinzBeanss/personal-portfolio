@@ -286,7 +286,7 @@
     align-items: center;
     width: 100%;
     background-color: var(--surface);
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
@@ -357,10 +357,170 @@
   /* Tablet Breakpoint */
   @media (max-width: 1200px) {
 
+    .skillname {
+        display: none;
+    }
+
+    .skillsetdesc, .currentlyworkingondesc {
+        padding: 0px 40px;
+    }
+
+    .slideshowimage {
+      width: 115px;
+      height: 115px;
+    }
+
+    .slideshowimagecontainer {
+      width: 140px;
+    }
+
+    .slideshow {
+      gap: 10px;
+  }
+  .rightarrow, .leftarrow {
+      width: 70px;
+  }
+
+  /* .skillscontainer {
+      rotate: 90deg;
+  } */
+
+  .skillscontainer {
+      width: 320px;
+      /* border: 2px solid red; */
+      margin-top: 260px;
+      margin-bottom: 320px;
+  }
+
+  .skillsetlogo {
+      width: 50px;
+  }
+  
+  .line-middle-one {
+      width: 80px;
+      transform: translateX(120px) translateY(-137px) rotate(90deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-middle-two {
+      width: 80px;
+      transform: translateX(120px) translateY(23px) rotate(90deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-middle-three {
+      width: 80px;
+      transform: translateX(120px) translateY(183px) rotate(90deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-top-one {
+      width: 60px;
+      transform: translateX(72px) translateY(-175px) rotate(320deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-top-two {         
+      width: 60px;
+      transform: translateX(72px) translateY(-95px) rotate(40deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-top-three {
+      width: 60px;
+      transform: translateX(72px) translateY(-20px) rotate(320deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-top-four {
+      width: 60px;
+      transform: translateX(72px) translateY(140px) rotate(320deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-top-five {
+      width: 60px;
+      transform: translateX(72px) translateY(225px) rotate(40deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-bottom-one {        
+      width: 60px;
+      transform: translateX(187px) translateY(-175px) rotate(220deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-bottom-two {        
+      width: 60px;
+      transform: translateX(187px) translateY(-95px) rotate(320deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-bottom-three {
+      width: 60px;
+      transform: translateX(187px) translateY(-20px) rotate(220deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-bottom-four {
+      width: 60px;
+      transform: translateX(187px) translateY(140px) rotate(220deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .line-bottom-five {
+      width: 60px;
+      transform: translateX(187px) translateY(225px) rotate(320deg);
+      box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
+  }
+
+  .javascript {
+      transform: translateX(-25px) translateY(-80px);
+  }
+
+  .html {
+      transform: translateX(-25px) translateY(-240px);
+  }
+
+  .css {
+      transform: translateX(-25px) translateY(80px);
+  }
+
+  .reactjs {
+      transform: translateX(-25px) translateY(-80px) rotate(325deg) translateX(140px) rotate(35deg);
+  }
+
+  .git {
+      transform: translateX(-25px) translateY(-240px) rotate(145deg) translateX(140px) rotate(215deg);
+  }
+
+  .webpack {
+      transform: translateX(-25px) translateY(-80px) rotate(145deg) translateX(140px) rotate(215deg);
+
+  }
+  .jest {
+      transform: translateX(-25px) translateY(80px) rotate(325deg) translateX(140px) rotate(35deg);
+
+  }
+  .photoshop {
+      transform: translateX(-25px) translateY(240px);
+
+  }
+  .illustrator {
+      transform: translateX(-25px) translateY(80px) rotate(145deg) translateX(140px) rotate(215deg);
+
+  }
+  .aftereffects {
+      transform: translateX(-25px) translateY(80px) rotate(35deg) translateX(140px) rotate(325deg);
+  }
   }
   
   /* Phone Breakpoint*/
   @media (max-width: 600px) {
+
+    .skillname {
+        display: none;
+    }
       .skillsetdesc, .currentlyworkingondesc {
           padding: 0px 20px;
       }

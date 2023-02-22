@@ -91,6 +91,20 @@ code {
     monospace;
 }
 
+/* Tablet Breakpoint */
+@media (max-width: 1200px) {
+  body {
+    --h1-size: 2.8rem;
+    --h1-weight: 400;
+    --h2-size: 2rem;
+    --h3-size: 1.6rem;
+    --h3-weight: 300;
+  
+    --p-size: 1.1rem;
+    --p-lineheight: 1.5em;
+  }
+}
+
 /* Phone Breakpoint*/
 @media (max-width: 600px) {
   body {

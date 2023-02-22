@@ -14,10 +14,18 @@ nav {
 .navlinks {
     display: flex;
     gap: 20px;
+    list-style-type: none;
 }   
 
-.navlinks {
-    list-style-type: none;
+.navitem {
+    cursor: pointer;
+}
+
+  /* Tablet Breakpoint */
+  @media (max-width: 1200px) {
+    nav {
+
+    }
 }
 
   /* Phone Breakpoint*/

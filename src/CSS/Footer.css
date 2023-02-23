@@ -15,4 +15,5 @@
 
 .footerimage {
     width: 50px;
+    filter: var(--filtertest);
 }

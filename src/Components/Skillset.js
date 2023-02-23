@@ -95,14 +95,12 @@ const Skillset = () => {
                  <div className="slideshowarea">
                     <img className="leftarrow" src={leftarrow} alt="leftarrow" onClick={moveBackward}></img>
                     <div className="slideshow">
-                        {/* <Slide arrows="false" slidesToScroll={1} slidesToShow={2}> */}
                         {currentlyWorkingOnArray.map((skill, index) => (
                             <a href={skill.website} key={index} target="_blank" rel="noopener noreferrer"className="slideshowimagecontainer">
                                 <img className={`${skill.name} slideshowimage`} src={skill.image} alt={skill.name} key={index}></img>
                             </a>
                             )
                         )}
-                        {/* </Slide> */}
                     </div>
                     <img className="rightarrow" src={rightarrow} alt="rightarrow" onClick={moveForward}></img>
                 </div> 
@@ -115,25 +113,3 @@ const Skillset = () => {
 }
 
 export default Skillset;
-
-// {currentlyWorkingOnArray.map((skill, index) => (
-//     <div key={index} className="slideshowimagecontainer">
-//     <img className="slideshowimage" src={skill.image} alt={skill.name} key={index}></img>
-//     </div>
-// )
-// )}
-
-/* <div className="slideshowarea">
-                <img src={leftarrow} alt="left arrow" onClick={moveBackward}></img>
-                <div className="slideshow">
-                    <Slide slidesToScroll={1} slidesToShow={2}>
-                    {currentlyWorkingOnArray.map((skill, index) => (
-                            <div key={index} className="slideshowimagecontainer">
-                            <img className="slideshowimage" src={skill.image} alt={skill.name} key={index}></img>
-                            </div>
-                        )
-                    )}
-                    </Slide>
-                </div>
-                <img src={rightarrow} alt="right arrow" onClick={moveForward}></img>
-            </div> */

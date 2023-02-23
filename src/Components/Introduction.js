@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 import "../CSS/Introduction.css"
 import downarrow from "../Assets/arrow-down.svg"
-
 import Typewriter from 'typewriter-effect';
 
 const Introduction = () => {
-
   useEffect(() => {
     let IntroDesc = document.querySelector(".introductiondesc");
     let Arrow = document.querySelector(".arrow");
@@ -108,13 +106,11 @@ const Introduction = () => {
                     }
                   })
                     .typeString('<div class="words"><span class="spantoanimate">an aspiring developer.</span><span class="spantoanimate">a programming enthusiast.</span><span class="spantoanimate">your next employee.</span><span class="spantoanimate">David. :)</span><span class="spantoanimate">an aspiring developer.</span></div>')
-                    // .pauseFor(1200)
 
                     .start();
                   }}
                 />
             </h1>
-                {/* <h1 className="introtitledavid"></h1> */}
                 </div>
             </div>
 
@@ -128,23 +124,3 @@ const Introduction = () => {
 }
 
 export default Introduction;
-
-
-// .pauseFor(200)
-// .typeString('<span>I\'m an aspiring developer.</span>')
-// .pauseFor(1200)
-// .deleteChars(23)
-// .pauseFor(500)
-//   .typeString(' a programming enthusiast!')
-//   .pauseFor(1200)
-//   .deleteChars(25)
-//   .pauseFor(500)
-//   .typeString('your next employee?')
-//   .pauseFor(1200)
-//   .deleteChars(19)
-//   .pauseFor(500)
-//   .typeString('<strong><span style="color: var(--primary)">David. </span></strong>')
-//   .pauseFor(1500)
-//   .typeString('<strong><span style="color: var(--primary)">:)</span></strong>')
-//   .pauseFor(10000)
-//   .start();

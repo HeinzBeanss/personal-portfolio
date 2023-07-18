@@ -105,7 +105,7 @@ const Introduction = () => {
                       return () => clearTimeout(timer);
                     }
                   })
-                    .typeString('<div class="words"><span class="spantoanimate">an aspiring developer.</span><span class="spantoanimate">a programming enthusiast.</span><span class="spantoanimate">your next employee.</span><span class="spantoanimate">David. :)</span><span class="spantoanimate">an aspiring developer.</span></div>')
+                    .typeString('<div class="words"><span class="spantoanimate">an aspiring developer.</span><span class="spantoanimate">a programming enthusiast.</span><span class="spantoanimate">your next employee.</span><span class="spantoanimate">David.</span><span class="spantoanimate">an aspiring developer.</span></div>')
 
                     .start();
                   }}

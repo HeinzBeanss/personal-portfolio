@@ -336,6 +336,7 @@
 }
 
 .slideshowimagecontainer {
+    font-size:0;
     width: 180px;
     border-radius: 0.5rem;
     padding: 10px;
@@ -344,6 +345,7 @@
 }
 
 .slideshowimage {
+    
     width: 150px;
     height: 150px;
 }

@@ -9,6 +9,7 @@ import mobilebattleshipgif from "../Assets/mobile-battleship.gif";
 import mobileshoppingcartgif from "../Assets/mobile-shoppingcart.gif";
 import beebuddiesgif from "../Assets/beebuddieslarge-min.gif";
 import beebuddiessmall from "../Assets/beebuddiessmall.png";
+import beebuddiesmobile from "../Assets/bbmobile.gif";
 
 const PersonalProjects = () => {
 
@@ -73,16 +74,18 @@ const PersonalProjects = () => {
             <div className="gifbackgroundprimary">
                     <a href="https://heinzbeanss.github.io/beebuddies/#/" target="_blank" rel="noopener noreferrer">
                         <img className="beebuddiessbig gif"
-                            srcSet={`${beebuddiesgif} 600w, ${beebuddiesgif} 700w`}
-                            sizes="(max-width: 860px) 480px, 700px" src={beebuddiesgif} alt="instagram clone">
-                            </img>
+                            src={beebuddiesmobile}
+                            srcSet={`${beebuddiesmobile} 600w, ${beebuddiesgif} 700w`}
+                            sizes="(max-width: 600px) 600px, 700px" 
+                            alt="beebuddies">
+                        </img>
                         </a>
                 </div>
                 <div className="gifbackgroundsecondary">
                     <a href="https://heinzbeanss.github.io/beebuddies/#/" target="_blank" rel="noopener noreferrer">
                         <img className="beebuddiessmall gif"
                             srcSet={`${beebuddiessmall} 600w, ${beebuddiessmall} 700w`}
-                            sizes="(max-width: 300px) 480px, 700px" src={beebuddiessmall} alt="instagram clone">
+                            sizes="(max-width: 300px) 480px, 700px" src={beebuddiessmall} alt="beebuddies">
                             </img>
                         </a>
                 </div>

@@ -242,6 +242,8 @@
   /* Tablet Breakpoint */
   @media (max-width: 1200px) {
 
+
+
     .beebuddiesmedia { 
       width: 100%;
       flex-direction: column;
@@ -261,8 +263,7 @@
     }
     
     .gifbackgroundsecondary {
-      width: 300px;
-      height: 500px;
+      display: none;
     }
 
     .projectdesclarge {
@@ -322,6 +323,13 @@
   
   /* Phone Breakpoint*/
   @media (max-width: 600px) {
+
+    .gifbackgroundprimary {
+      min-width: 300px;
+      height: 400px;
+      max-width: 100%;
+
+    }
 
     .PersonalProjects {
         padding: 0px 20px;

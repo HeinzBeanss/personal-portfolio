@@ -47,237 +47,33 @@
 
 .skillscontainer {
     width: 900px;
-    /* border: 2px solid red; */
-    position: relative;
-    margin-top: 300px;
-    margin-bottom: 390px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
+
 .skillsetlogo {
     width: 70px;
     border-radius: 0.2rem;
+    padding: 10px;
+    transition: transform 0.3s ease-out, margin 0.5s ease;
 }
 
 .skillsetlogo:hover {
     /* padding: 5px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.5); /* Enlarge the image on hover by 20% */
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
-/* .javascript {
-    position: absolute;
-    transform: translateX(-160px);
-}
-
-.html {
-    position: absolute;
-    transform: translateX(-410px);
-}
-
-.css {
-    position: absolute;
-    transform: translateX(90px);
-}
-
-.reactjs {
-    position: absolute;
-    transform: translateX(-160px) rotate(60deg) translateX(-245px);
-}
-
-.git {
-    position: absolute;
-    transform: translateX(-160px) rotate(300deg) translateX(-245px) rotate(60deg);
-}
-
-.webpack {
-    position: absolute;
-    transform: translateX(90px) rotate(300deg) translateX(-245px) rotate(60deg);
-
-}
-.jest {
-    position: absolute;
-    transform: translateX(90px) rotate(60deg) translateX(-245px) rotate(300deg);
-
-}
-.photoshop {
-    position: absolute;
-    transform: translateX(340px);
-
-}
-.illustrator {
-    position: absolute;
-    transform: translateX(340px) rotate(300deg) translateX(-245px) rotate(60deg);
-
-}
-.aftereffects {
-    position: absolute;
-    transform: translateX(340px) rotate(60deg) translateX(-245px) rotate(300deg);
+/* .hovered {
+    width: 200px;
+    height: 200px;
 } */
 
-.line-middle-one {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(55px) translateY(35px);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-middle-two {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(355px) translateY(35px);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-middle-three{
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(655px) translateY(35px);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-top-one {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(-10px) translateY(-95px) rotate(120deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-top-two {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(120px) translateY(-95px) rotate(60deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-top-three {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(290px) translateY(-95px) rotate(120deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-top-four {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(590px) translateY(-95px) rotate(120deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-top-five {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(720px) translateY(-95px) rotate(60deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-bottom-one {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(-10px) translateY(165px) rotate(60deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-bottom-two {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(120px) translateY(165px) rotate(120deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-bottom-three {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(290px) translateY(165px) rotate(60deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-bottom-four {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(590px) translateY(165px) rotate(60deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.line-bottom-five {
-    position: absolute;
-    border: 1px solid var(--paragraph-text);
-    border-radius: 1rem;
-    width: 190px;
-    transform: translateX(720px) translateY(165px) rotate(120deg);
-    box-shadow: rgba(0, 0, 0, 0.05) 1px 1px 2.6px;
-}
-
-.javascript {
-    position: absolute;
-    transform: translateX(-185px);
-}
-
-.html {
-    position: absolute;
-    transform: translateX(-485px);
-}
-
-.css {
-    position: absolute;
-    transform: translateX(115px);
-}
-
-.reactjs {
-    position: absolute;
-    transform: translateX(-185px) rotate(60deg) translateX(-300px) rotate(300deg);
-}
-
-.git {
-    position: absolute;
-    transform: translateX(-185px) rotate(300deg) translateX(-300px) rotate(60deg);
-}
-
-.webpack {
-    position: absolute;
-    transform: translateX(115px) rotate(300deg) translateX(-300px) rotate(60deg);
-
-}
-.jest {
-    position: absolute;
-    transform: translateX(115px) rotate(60deg) translateX(-300px) rotate(300deg);
-
-}
-.photoshop {
-    position: absolute;
-    transform: translateX(415px);
-
-}
-.illustrator {
-    position: absolute;
-    transform: translateX(415px) rotate(300deg) translateX(-300px) rotate(60deg);
-
-}
-.aftereffects {
-    position: absolute;
-    transform: translateX(415px) rotate(60deg) translateX(-300px) rotate(300deg);
-}
 
 /* Currently Working On */
 

@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--paragraph-text);
+  color: var(--paragraph-text-dark);
 }
 
 .anchorrefintro {
@@ -140,13 +140,13 @@
   text-align: left;
   font-size: var(--h3-size);
   font-weight: var(--h3-weight);
-  color: var(--primary);
+  color: var(--title-dark);
   width: 1000px;
   /* border-bottom: 1px solid var(--on-surface); */
 }
 
 .introductiondesc {
-  color: var(--paragraph-text);
+  color: var(--paragraph-text-dark);
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
   margin: 20px 0;

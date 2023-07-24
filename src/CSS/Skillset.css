@@ -123,7 +123,7 @@
 }
 
 .currentlyworkingondesc {
-  color: var(--paragraph-text);
+  color: var(--paragraph-text-dark);
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
   max-width: 1000px;
@@ -141,6 +141,7 @@
   font-weight: var(--h3-weight);
   width: 1000px;
   text-align: start;
+  color: var(--title-dark);
 }
 
 .currentlyworkingonskill {
@@ -149,6 +150,7 @@
   font-size: 1.4rem;
   font-weight: var(--h3-weight);
   margin-top: 20px;
+  color: var(--title-dark);
 }
 
 .slideshowarea {
@@ -323,7 +325,7 @@
 
   .skillscontainer {
     display: flex;
-    animation: rotateConveyor 20s linear infinite;
+    animation: rotateConveyor 25s linear infinite;
     justify-content: flex-start;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -334,7 +336,7 @@
   .skillsetlogo {
     width: 71px;
     transition: none;
-    animation: resetConveyor 20s linear infinite;
+    animation: resetConveyor 25s linear infinite;
     animation-fill-mode: forwards; 
     animation-timing-function: linear; 
   }

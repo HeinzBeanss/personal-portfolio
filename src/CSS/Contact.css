@@ -23,10 +23,11 @@
   font-weight: var(--h1-weight);
   margin: 0;
   text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.4);
+  color: var(--title-dark);
 }
 
 .desccontact {
-  color: var(--paragraph-text);
+  color: var(--paragraph-text-dark);
   font-family: 'Outfit', sans-serif;
   font-weight: 200;
   margin: 0;

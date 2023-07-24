@@ -177,6 +177,10 @@
 
 }
 
+.primaryprojectinfo > .projecttitle {
+  text-align: left;
+}
+
 .projectdesc {
   color: var(--paragraph-text);
   max-width: 500px;
@@ -242,8 +246,9 @@
   /* Tablet Breakpoint */
   @media (max-width: 1200px) {
 
-
-
+    .primaryprojectinfo > .projecttitle {
+      text-align: unset;
+    }
     .beebuddiesmedia { 
       width: 100%;
       flex-direction: column;

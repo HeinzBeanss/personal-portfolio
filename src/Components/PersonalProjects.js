@@ -63,12 +63,12 @@ const PersonalProjects = () => {
         <div className="primaryproject">
             <div className="primaryprojectinfo left">
                 <h3 className="projecttitle">BeeBuddies</h3>
-                <p className="projectdesclarge">BeeBuddies is a social media platform crafted with a unique front-end client built on React, complemented by a powerful back-end API following RESTful practices. This dynamic combination utilizes NodeJS and Express, coupled with MongoDB for efficient database storage. Embracing its distinct identity, the platform boasts a custom design and captivating typeface. The user-friendly interface welcomes everyone to effortlessly create an account and engage with others as they desire. Embracing versatility, BeeBuddies seamlessly adapts to all screen layouts, ensuring an optimal experience across desktop, tablet, and mobile devices.
+                <p className="projectdesclarge">BeeBuddies is a social media platform crafted with a unique front-end client built on React, complemented by a back-end API following RESTful practices. This dynamic combination utilizes NodeJS and Express, coupled with MongoDB for database storage. Embracing its distinct identity, the platform boasts a custom design and captivating typeface. The user-friendly interface welcomes everyone to easily create an account and engage with others as they please. Embracing versatility, BeeBuddies adapts to all screen layouts, ensuring an optimal experience across desktop, tablet, and mobile devices.
                 </p>
 
                 <p className="projectdesclarge">If you want to explore without the effort of creating an account, please utilise the <i>continue as guest</i> feature on the login page.</p>
 
-                <p className="projectstacklarge">Created using React and NodeJS</p>
+                <p className="projectstacklarge">Created using React, NodeJS, and MongoDB</p>
             </div>
             <div class="beebuddiesmedia">
             <div className="gifbackgroundprimary">
@@ -104,7 +104,7 @@ const PersonalProjects = () => {
                 <div className="projectinfo right">
                     <h3 className="projecttitle">Instagram Clone</h3>
                     <p className="projectdesc">A clone of the popular social media platform Instagram, the goal here was to achieve around 80% accuracy of the real website. Using React for the front end and Firebase for the backend, users can create an account, upload their own posts alongside captions, edit their profile picture and description, as well as follow and like other users and their posts respectively.</p>
-                    <p className="projectstack">Created using React</p>
+                    <p className="projectstack">Created using React and Firebase</p>
                 </div>
 
             </div>
@@ -112,7 +112,7 @@ const PersonalProjects = () => {
                 <div className="projectinfo left">
                         <h3 className="projecttitle">Battleship</h3>
                         <p className="projectdesc">A simple version of the popular strategy-type guessing game Battleship, players can place their shapes ranging from different sizes and orientations. The user then takes turns against an easy, however, not completely clueless computer in a competitive battle in which the first player to hit all the other's ships will be announced the victor.</p>
-                        <p className="projectstack">Created using Vanilla JavaScript</p>
+                        <p className="projectstack">Created using HTML, CSS, and JavaScript</p>
 
                 </div>
                 <div className="gifbackground">

@@ -117,7 +117,7 @@ const Introduction = () => {
             <div id="About" className="anchorrefintro"></div>
             <div className="introductiondesccontainer">
                 <h3 className="introductiondescsub">A little about <i>me...</i></h3>
-                <p className="introductiondesc">You won't find a more committed individual than myself with regard to mastering the art of web development. Starting my independent journey over half a year ago I have since self-studied consistently, achieving proficiency in HTML, CSS, and JavaScript alongside its most popular Framework, ReactJS. These skills, alongside a combination of experience with several Adobe Design software from my Graphic Design degree from the University of Huddersfield, make me both a versatile developer <i>and</i> designer.</p>
+                <p className="introductiondesc">Hi I'm David Bean, and you won't find a more committed individual than myself with regard to mastering the art of web development. Starting my independent journey over a year ago I have since self-studied consistently, achieving proficiency in HTML, CSS, and JavaScript alongside its most popular Framework, React. Then continuing my progress I explored server-side programming with Node and Express to become a full-stack developer. These skills, alongside a combination of experience with several Adobe Design software from my Graphic Design degree from the University of Huddersfield, make me both a versatile developer <i>and</i> designer.</p>
             </div>
         </div>
     )

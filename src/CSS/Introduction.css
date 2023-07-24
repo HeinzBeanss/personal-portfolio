@@ -6,10 +6,6 @@
     box-sizing: border-box;
 }
 
-/* i {
-    color: var(--primary);
-} */
-
 .introduction {
     width: 100%;
     display: flex;
@@ -62,7 +58,6 @@
 }
 
 .introtitlemynameis {
-    /* overflow: hidden; */
     white-space: nowrap;
     margin: 0 auto;
     text-align: start;
@@ -70,8 +65,6 @@
     font-size: 3.9rem;
     font-weight: 600;
     line-height: 5rem;
-    /* overflow: hidden; */
-    /* background-color: yellow; */
     display: flex;
     flex-direction: row;
     min-height: 5rem;
@@ -79,13 +72,11 @@
 
 .Typewriter {
     overflow: hidden;
-    /* height: fit-content; */
     height: 100%;
     display: flex;
 }
 .Typewriter__wrapper {
     display: flex;
-    /* flex-direction: row; */
     overflow: hidden;
     height: 100%;
 }
@@ -97,18 +88,13 @@
 
 .spantoanimate {
     display: block;
-    /* height: 10%; */
     padding-left: 20px;
-    /* border: 1px solid red; */
-    /* animation: spin_words 8s infinite; */
     color: var(--primary);
 }
 
 .animate {
     animation: spin_words 8s infinite;
 }
-
-
 
 @keyframes spin_words {
     10% {
@@ -136,33 +122,6 @@
         transform:  translateY(-400%);
     }
 }
-
-/* @keyframes spin_words {
-    10% {
-        transform:  translateY(-112%);
-    }
-    25% {
-        transform:  translateY(-100%);
-    }
-    35% {
-        transform:  translateY(-212%);
-    }
-    50% {
-        transform:  translateY(-200%);
-    }
-    60% {
-        transform:  translateY(-312%);
-    }
-    75% {
-        transform:  translateY(-300%);
-    }
-    85% {
-        transform:  translateY(-412%);
-    }
-    100% {
-        transform:  translateY(-400%);
-    }
-} */
 
 .introductiondesccontainer {
     display: flex;
@@ -391,11 +350,14 @@
   @media (max-width: 600px) {
       .introductiondesccontainer {
           padding: 0px 20px;
+
       }
 
       .introductiontextcontainer {
         width: 320px;
         padding: 0px;
+        padding-bottom: 15px;
+        padding-top: 10px;
         box-sizing: border-box;
     }
 
@@ -439,7 +401,6 @@
     .words {
         display: flex;
         flex-direction: row;
-        /* display: inline-block; */
         overflow: visible;
     }
 
@@ -455,13 +416,10 @@
     }
 
     .introtitlemynameis {
-        /* flex-direction: column; */
         font-size: 2.5rem;
-        /* line-height: 5rem; */
         font-weight: 600;
         line-height: 2.5rem;
         height: 10rem;
-        /* height: fit-content; */
         white-space: normal;
         justify-content: center;
         align-items: center;
@@ -474,8 +432,6 @@
         min-width: 320px;
         overflow: visible;
         padding-left: 0px;
-        /* border: 1px solid red; */
-        /* font-size: 1rem; */
     }
 
     .Typewriter__wrapper {
@@ -486,14 +442,9 @@
     .animate {
         text-align: center;
         animation: spin_words 9s infinite;
-        /* animation: 0; */
     }
 
     .introductiontextcontainer {
-        /* display: flex;
-        flex-direction: column;
-        align-items: center; */
-        /* justify-content: center; */
         text-align: center;
         height: fit-content;
     }
@@ -505,7 +456,7 @@
     .Typewriter__wrapper > p {
         text-align: center;
     }
-    }
+}
   
     
 

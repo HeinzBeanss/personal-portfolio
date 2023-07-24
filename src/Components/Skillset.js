@@ -128,7 +128,7 @@ const Skillset = () => {
 
         <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo css" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" onMouseOver={changeSkillNameFront} alt="CSS"/></a>
 
-        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo reactjs" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" onMouseOver={changeSkillNameFront} alt="ReactJS"/></a>
+        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" onMouseOver={changeSkillNameFront} alt="React"/></a>
     </div>
 
 const backendSkillsSet = deviceWidth <= 600 ? 
@@ -193,7 +193,7 @@ const backendSkillsSet = deviceWidth <= 600 ?
 
         <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" onMouseOver={changeSkillNameBack} alt="Express"/></a>
 
-        <a href="https://pug.js.com/" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo PugJS" src={pug} onMouseOver={changeSkillNameBack} alt="PugJS"/></a>
+        <a href="https://pug.js.com/" target="_blank" rel="noopener noreferrer"><img className="skillsetlogo Pug" src={pug} onMouseOver={changeSkillNameBack} alt="Pug"/></a>
     </div>
 
 const otherSkillsSet = deviceWidth <= 600 ? 
@@ -271,25 +271,26 @@ const otherSkillsSet = deviceWidth <= 600 ?
                 <h2 className="skillsectiontitle">Front-end Skills</h2>
                 <p className="skillname">{skillnameFront}</p>
             </div>
-            <p className="skillsetdesc">Being the first of which I began learning, front-end development is what I'm most familiar with. Starting purely with HTML, CSS, and JavaScript, I created simple applications with those alone before indulgiding in the more refined approach of React. Since then I've grown profoundly more accustomed to the framework, creating websites both entirely front-end, as well as those combining server-side APIs with it also.</p>
+            <p className="skillsetdesc">Front-end development was my starting point on my journey as a developer, and it remains the area where I feel most familiar. Beginning with HTML, CSS, and JavaScript, I built simple applications using these foundational technologies before delving into the more refined approach of React. As I progressed, my comfort with JSX grew significantly and I've grown profoundly more accustomed to the framework, creating websites both entirely front-end, as well as integrating server-side APIs into my projects also.</p>
             {frontendSkillsSet}
             <div class="skillsectiontop">
                 <h2 className="skillsectiontitle">Back-end Skills</h2>
                 <p className="skillname">{skillnameBack}</p>
             </div>
-            <p className="skillsetdesc">Learning to be a fullstack developer was incredibly rewarding, I started this by progressing with NodeJS and its accompanying framework Express. Using both of these I'm able to build refreshingly straight-forward APIs for server-side code incorporating standard RESTful practices. I am confident utilising my front-end experitse alongside my back-end services, however, if necessary I am confident with templating engines such as Pug to maintain MVC architecture.</p>
+            <p className="skillsetdesc">Learning to be a full-stack developer has been incredibly rewarding. I began by mastering Node.js and its accompanying framework, Express. With this knowledge, I can now create straightforward and refreshing APIs for server-side code, adhering to standard RESTful practices. My confidence extends to leveraging my front-end expertise in conjunction with my back-end services. Moreover, if required, I am adept at using templating engines like Pug to maintain a clean and structured MVC architecture.</p>
             {backendSkillsSet}
             <div class="skillsectiontop">
                 <h2 className="skillsectiontitle">Other Skills</h2>
                 <p className="skillname">{skillnameOther}</p>
             </div>
-            <p className="skillsetdesc">Throughout the journey of learning I've come to appreciate other tools in web development, the predominant one being using a version control system, and nothing is as reassuring as git. Naturally, graduating university with a degree in graphic design gave me plenty of opportunity to acquaint myself with design software, most of those belonging to Adobe Creative Cloud such as Photoshop, Illustrator, and After-Effects. </p>
+            <p className="skillsetdesc">Throughout my learning journey, I have come to appreciate various tools in web development, and among them, using a version control system has been particularly significant; nothing is as reassuring and indispensable as Git in managing my code.
+            Additionally, graduating from university with a degree in graphic design has provided me with ample opportunities to familiarize myself with design software, with Adobe Creative Cloud being a predominant part of my toolkit. I am proficient in using applications like Photoshop, Illustrator, and After Effects, all of which have enriched my capabilities in the aspect of design.</p>
             {otherSkillsSet}
             
             <div className="currentlyworkingoncontainer">
           
                 <h3 className="currentlyworkingontitle">Currently learning about...</h3>
-                <p className="currentlyworkingondesc">As technologies continue to evolve, I'm a firm believer that there will <i>always</i> be something to learn. At the moment, I'm currently working towards educating myself on back-end development, therefore, advancing my knowledge in:</p>
+                <p className="currentlyworkingondesc">As technologies continue to evolve, I'm a firm believer that there will <i>always</i> be something to learn. I'm currently working towards educating myself further on back-end development, therefore, advancing my knowledge in PHP and Laravel. I already have a solid understanding of server-side code from my experience with Node and Express, and with PHP being incredibly desirable and popular even today, I can't continue to progress without having it under my skillset.</p>
                 <h3 className="currentlyworkingonskill">{currentlyworkingonskill}</h3>
                  <div className="slideshowarea">
                     <img className="leftarrow" src={leftarrow} alt="leftarrow" onClick={moveBackward}></img>
@@ -297,12 +298,6 @@ const otherSkillsSet = deviceWidth <= 600 ?
                         <a href={currentlyWorkingOnArray[0].website} target="_blank" rel="noopener noreferrer" className="slideshowimagecontainer">
                                 {currentlyWorkingOnArray[0].image}
                             </a>
-                        {/* {currentlyWorkingOnArray.map((skill, index) => (
-                            <a href={skill.website} key={index} target="_blank" rel="noopener noreferrer" className="slideshowimagecontainer">
-                                {skill.image}
-                            </a>
-                            )
-                        )} */}
                     </div>
                     <img className="rightarrow" src={rightarrow} alt="rightarrow" onClick={moveForward}></img>
                 </div> 

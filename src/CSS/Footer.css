@@ -1,19 +1,20 @@
 .footer {
-    display: flex;
-    padding: 5px 30px;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--surface);
-    border-top: 2px var(--tertiary-container) solid;
+  display: flex;
+  padding: 5px 30px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--surface);
+  border-top: 2px var(--tertiary-container) solid;
 }
 
 .footername {
-    color: var(--on-background);
-    font-family: 'Exo 2', sans-serif;
-    font-weight: 300;
+  color: var(--on-background);
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
 }
 
 .footerimage {
-    width: 50px;
-    filter: var(--filtertest);
+  margin-top: 5px;
+  width: 40px;
+  filter: var(--filtertest);
 }

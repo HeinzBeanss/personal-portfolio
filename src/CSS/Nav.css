@@ -1,39 +1,39 @@
 nav {
-    position: fixed;
-    /* border-bottom: 1px solid red; */
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: var(--background);
-    width: 100%;
-    z-index: 1;
+  position: fixed;
+  /* border-bottom: 1px solid red; */
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--background);
+  width: 100%;
+  z-index: 1;
 }
 
 .navlinks {
-    display: flex;
-    gap: 20px;
-    list-style-type: none;
-}   
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
 
 .navitem {
-    cursor: pointer;
-    color: var(--paragraph-text);
+  cursor: pointer;
+  color: var(--paragraph-text);
 }
 
 .navitem:hover {
-  color: var(--primary)
+  color: var(--primary);
 }
 
-  /* Tablet Breakpoint */
-  @media (max-width: 1200px) {
+/* Tablet Breakpoint */
+@media (max-width: 1200px) {
 }
 
-  /* Phone Breakpoint*/
-  @media (max-width: 600px) {
-    nav {
-        display: none;
-        /* visibility: hidden; */
-    }
+/* Phone Breakpoint*/
+@media (max-width: 600px) {
+  nav {
+    display: none;
+    /* visibility: hidden; */
   }
+}

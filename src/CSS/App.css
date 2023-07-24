@@ -15,7 +15,6 @@
   color: var(--on-background);
   display: flex;
   flex-direction: column;
- 
 }
 
 /* Custom Scroll Bar */
@@ -29,7 +28,6 @@
 
 ::-webkit-scrollbar-thumb {
   background: var(--surface);
-
 }
 
 /* Handle on hover */

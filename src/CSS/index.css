@@ -1,5 +1,4 @@
 body {
-
   /* Neutral Blue */
   --primary: #96ccff;
   --secondary: #b9c8da;
@@ -7,17 +6,23 @@ body {
   --on-tertiary: #00363e;
   --tertiary-container: #004e5a;
   --paragraph-text: #f3f3f3;
-  
+
   --background: #1a1c1e;
   --surface: #202427;
 
   --on-background: #96ccff;
   --on-surface: #e2e2e5;
-  --svg: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg) brightness(96%) contrast(101%);
-  --filtertest: invert(66%) sepia(76%) saturate(354%) hue-rotate(144deg) brightness(101%) contrast(87%);
+  --svg: invert(51%) sepia(65%) saturate(3606%) hue-rotate(162deg)
+    brightness(96%) contrast(101%);
+  --filtertest: invert(66%) sepia(76%) saturate(354%) hue-rotate(144deg)
+    brightness(101%) contrast(87%);
 
-  --gradient-one: rgb(26,28,30);
-  --gradient-two: linear-gradient(347deg, rgba(26,28,30,1) 0%, rgba(33,38,41,1) 100%);
+  --gradient-one: rgb(26, 28, 30);
+  --gradient-two: linear-gradient(
+    347deg,
+    rgba(26, 28, 30, 1) 0%,
+    rgba(33, 38, 41, 1) 100%
+  );
 
   /* Vivid Red */
   /* --primary: #ff0040;
@@ -76,7 +81,7 @@ body {
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -89,11 +94,10 @@ body {
   --p-size: 1.2rem;
   --p-lineheight: 1.8rem;
   color: var(--paragraph-text);
-
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -105,7 +109,7 @@ code {
     --h2-size: 2rem;
     --h3-size: 1.6rem;
     --h3-weight: 300;
-  
+
     --p-size: 1.1rem;
     --p-lineheight: 1.5em;
   }
@@ -114,12 +118,12 @@ code {
 /* Phone Breakpoint*/
 @media (max-width: 600px) {
   body {
-    --h1-size: 2.4rem;
+    --h1-size: 2rem;
     --h1-weight: 400;
     --h2-size: 1.8rem;
     --h3-size: 1.4rem;
     --h3-weight: 300;
-  
+
     --p-size: 1rem;
     --p-lineheight: 1.4rem;
   }

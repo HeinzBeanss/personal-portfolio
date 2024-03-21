@@ -41,8 +41,9 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://davidbean.dev",
+  "homepage": "http://HeinzBeanss.github.io/personal-portfolio",
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "prettier": "^3.0.0"
   }
 }

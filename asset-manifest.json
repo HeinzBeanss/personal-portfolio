@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.a8b830a6.css",
-    "main.js": "/static/js/main.941965f6.js",
-    "static/media/shoppingcartgif.gif": "/static/media/shoppingcartgif.4bc0a2060a774a5e8e3b.gif",
-    "static/media/mobile-shoppingcart.gif": "/static/media/mobile-shoppingcart.0f1ddff0503a3b0869aa.gif",
-    "static/media/mobile-battleship.gif": "/static/media/mobile-battleship.51abe3ef39dc38e6bdf0.gif",
-    "static/media/battleshipgif.gif": "/static/media/battleshipgif.fb3f31f104d7271c8b92.gif",
-    "static/media/beebuddieslarge-min.gif": "/static/media/beebuddieslarge-min.3ede5e5070379882aea0.gif",
-    "static/media/instagramgif.gif": "/static/media/instagramgif.eecedac0301d383a9644.gif",
-    "static/media/bbmobile.gif": "/static/media/bbmobile.ddf7646188c7beaa9f6c.gif",
-    "static/media/mobile-instagram.gif": "/static/media/mobile-instagram.68587dc8879d2f04218f.gif",
-    "static/media/beebuddiessmall.png": "/static/media/beebuddiessmall.b02c4f1463805d6cbf37.png",
-    "static/media/pug.svg": "/static/media/pug.9b02f5555f0f2e0dea02ab0f8871c891.svg",
-    "index.html": "/index.html",
-    "static/media/arrow-down.svg": "/static/media/arrow-down.7ab5b91fc64d49c7c9cd60d651164a8b.svg",
-    "static/media/chevron-left.svg": "/static/media/chevron-left.e1d826c590169378d5afe85fc1135ce3.svg",
-    "static/media/chevron-right.svg": "/static/media/chevron-right.7d2d9283445e3af8124c31892af8984c.svg",
-    "main.a8b830a6.css.map": "/static/css/main.a8b830a6.css.map",
-    "main.941965f6.js.map": "/static/js/main.941965f6.js.map"
+    "main.css": "/personal-portfolio/static/css/main.a8b830a6.css",
+    "main.js": "/personal-portfolio/static/js/main.10582e4d.js",
+    "static/media/shoppingcartgif.gif": "/personal-portfolio/static/media/shoppingcartgif.4bc0a2060a774a5e8e3b.gif",
+    "static/media/mobile-shoppingcart.gif": "/personal-portfolio/static/media/mobile-shoppingcart.0f1ddff0503a3b0869aa.gif",
+    "static/media/mobile-battleship.gif": "/personal-portfolio/static/media/mobile-battleship.51abe3ef39dc38e6bdf0.gif",
+    "static/media/battleshipgif.gif": "/personal-portfolio/static/media/battleshipgif.fb3f31f104d7271c8b92.gif",
+    "static/media/beebuddieslarge-min.gif": "/personal-portfolio/static/media/beebuddieslarge-min.3ede5e5070379882aea0.gif",
+    "static/media/instagramgif.gif": "/personal-portfolio/static/media/instagramgif.eecedac0301d383a9644.gif",
+    "static/media/bbmobile.gif": "/personal-portfolio/static/media/bbmobile.ddf7646188c7beaa9f6c.gif",
+    "static/media/mobile-instagram.gif": "/personal-portfolio/static/media/mobile-instagram.68587dc8879d2f04218f.gif",
+    "static/media/beebuddiessmall.png": "/personal-portfolio/static/media/beebuddiessmall.b02c4f1463805d6cbf37.png",
+    "static/media/pug.svg": "/personal-portfolio/static/media/pug.9b02f5555f0f2e0dea02ab0f8871c891.svg",
+    "index.html": "/personal-portfolio/index.html",
+    "static/media/arrow-down.svg": "/personal-portfolio/static/media/arrow-down.7ab5b91fc64d49c7c9cd60d651164a8b.svg",
+    "static/media/chevron-left.svg": "/personal-portfolio/static/media/chevron-left.e1d826c590169378d5afe85fc1135ce3.svg",
+    "static/media/chevron-right.svg": "/personal-portfolio/static/media/chevron-right.7d2d9283445e3af8124c31892af8984c.svg",
+    "main.a8b830a6.css.map": "/personal-portfolio/static/css/main.a8b830a6.css.map",
+    "main.10582e4d.js.map": "/personal-portfolio/static/js/main.10582e4d.js.map"
   },
   "entrypoints": [
     "static/css/main.a8b830a6.css",
-    "static/js/main.941965f6.js"
+    "static/js/main.10582e4d.js"
   ]
 }
